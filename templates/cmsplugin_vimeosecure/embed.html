@@ -1,0 +1,20 @@
+<div class="cmsplugin_vimeo">
+	<a name="{{object.video_id}}">
+	{% if object.show_secure %}
+		<object width="{{ object.width }}" height="{{ object.height }}">
+			<param name="allowfullscreen" value="true" />
+			<param name="allowscriptaccess" value="always" />
+			<param name="movie" value="{{ object.src }}" />
+			<embed src="{{ object.src }}" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="{{ object.width }}" height="{{ object.height }}">
+			</embed>
+		</object>
+	{% else %}
+		<iframe 
+		    src="{{ object.src }}" 
+		    width="{{ object.width }}" 
+		    height="{{ object.height }}" 
+		    frameborder="0">
+		</iframe>
+	{% endif %}
+	</a>
+</div>
