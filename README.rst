@@ -1,5 +1,5 @@
 =============================================
-DjangoCMS: Vimeo video Plugin (over Https)
+DjangoCMS Vimeo video Plugin (over Https)
 =============================================
 
 Install

@@ -9,6 +9,6 @@
 <value>src/cmsplugin_vimeosecure/manage.py</value>
 </pydev_variables_property>
 <pydev_pathproperty name="org.python.pydev.PROJECT_SOURCE_PATH">
-<path>/cmsplugin_vimeosecure/src</path>
+<path>/cmsplugin_vimeosecure/cmsplugin_vimeosecure</path>
 </pydev_pathproperty>
 </pydev_project>
