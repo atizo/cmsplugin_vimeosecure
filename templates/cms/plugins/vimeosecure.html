@@ -1,6 +1,6 @@
 <div class="cmsplugin_vimeo">
-	<a name="{{object.video_id}}">
-	{% if object.show_secure %}
+	<a name="vimeo_{{object.video_id}}">
+	{% if object.secure %}
 		<object width="{{ object.width }}" height="{{ object.height }}">
 			<param name="allowfullscreen" value="true" />
 			<param name="allowscriptaccess" value="always" />

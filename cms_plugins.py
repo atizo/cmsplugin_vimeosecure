@@ -1,14 +1,12 @@
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
-
 from cmsplugin_vimeo.models import Vimeo
-
 from django.utils.translation import ugettext as _
 
-class VimeoPlugin(CMSPluginBase):
+class VimeoSecurePlugin(CMSPluginBase):
     model = Vimeo
     name = _("Vimeo")
-    render_template = "cmsplugin_vimeosecure/embed.html"
+    render_template = "cms/plugins/vimeosecure.html"
 
     def render(self, context, instance, placeholder):
         context.update({
@@ -17,4 +15,4 @@ class VimeoPlugin(CMSPluginBase):
         })
         return context
 
-plugin_pool.register_plugin(VimeoPlugin)
+plugin_pool.register_plugin(VimeoSecurePlugin)
