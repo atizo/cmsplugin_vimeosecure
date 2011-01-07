@@ -1,10 +1,10 @@
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
-from cmsplugin_vimeo.models import Vimeo
 from django.utils.translation import ugettext as _
+from models import VimeoSecure
 
 class VimeoSecurePlugin(CMSPluginBase):
-    model = Vimeo
+    model = VimeoSecure
     name = _("Vimeo")
     render_template = "cms/plugins/vimeosecure.html"
 

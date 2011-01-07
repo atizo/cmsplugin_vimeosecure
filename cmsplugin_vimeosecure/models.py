@@ -25,7 +25,7 @@ class VimeoSecure(CMSPlugin):
         help_text=_('Show video over HTTPS.'))
 
     def __unicode__(self):
-        return u'<a href="http://vimeo.com/%{video_id}s">http://vimeo.com/%{video_id}s</a>' % {'video_id': self.video_id}
+        return u'<a href="http://vimeo.com/%(video_id)d">http://vimeo.com/%(video_id)d</a>' % {'video_id': self.video_id}
     __unicode__.allow_tags = True
 
     @property
