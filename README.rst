@@ -5,8 +5,8 @@ DjangoCMS: Vimeo video Plugin (over Https)
 Install
 =======
 
- # Add the `cmsplugin_vimeosecure` directory to your Python path.
- # Add the `cmsplugin_vimeosecure` app in your settings.py INSTALLED_APPS
+#. Add the `cmsplugin_vimeosecure` directory to your Python path.
+#. Add the `cmsplugin_vimeosecure` app in your settings.py INSTALLED_APPS
 
 Settings
 ========
