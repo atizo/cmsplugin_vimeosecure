@@ -11,7 +11,7 @@ Install
 Settings
 ========
 
-Its is possible to override the following Settings in your settings.py
+It is possible to override the following Settings in your settings.py
 
 VIMEOSECURE_COLOR
 	ffffff
