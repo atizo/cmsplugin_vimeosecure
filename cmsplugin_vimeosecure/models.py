@@ -3,7 +3,7 @@ from django.utils.translation import ugettext as _
 from cms.models import CMSPlugin
 import settings
 
-SECURE_SRC = ("http://secure.vimeo.com/moogaloop.swf?clip_id=%(video_id)d&amp;server=secure.vimeo.com&amp;"
+SECURE_SRC = ("https://secure.vimeo.com/moogaloop.swf?clip_id=%(video_id)d&amp;server=secure.vimeo.com&amp;"
               "title=%(title)d&amp;byline=%(byline)d&amp;portrait=%(portrait)d"
               "&amp;color=%(color)s&amp;fullscreen=1&amp;autoplay=%(autoplay)d&amp;loop=%(loop)d")
 PLAYER_SRC = ("http://player.vimeo.com/video/%(video_id)d?color=%(color)s&amp;byline=%(byline)d&portrait=%(portrait)"
