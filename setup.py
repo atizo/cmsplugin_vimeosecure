@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='cmsplugin-vimeosecure',
-    version='0.1',
+    version='0.2',
     description="DjangoCMS Vimeo video Plugin (over Https)",
     author='Marcel Eyer',
     author_email='maersu@atizo.com',
