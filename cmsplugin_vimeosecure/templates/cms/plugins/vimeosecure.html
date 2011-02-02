@@ -1,20 +1,26 @@
-<div class="cmsplugin_vimeo">
+{% load vimeosecure %}
+<div class="cmsplugin_vimeo" style="overflow: hidden;">
+	<div style="float: left;">	
 	<a name="vimeo_{{object.video_id}}">
-	{% if object.secure %}
-		<object width="{{ object.width }}" height="{{ object.height }}">
-			<param name="allowfullscreen" value="true" />
-			<param name="allowscriptaccess" value="always" />
-			<param name="movie" value="{{ object.src }}" />
-			<embed src="{{ object.src }}" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="{{ object.width }}" height="{{ object.height }}">
-			</embed>
-		</object>
-	{% else %}
-		<iframe 
-		    src="{{ object.src }}" 
-		    width="{{ object.width }}" 
-		    height="{{ object.height }}" 
-		    frameborder="0">
-		</iframe>
-	{% endif %}
-	</a>
+		{% if object.secure %}
+			<object width="{{ object.width }}" height="{{ object.height }}">
+				<param name="allowfullscreen" value="true" />
+				<param name="allowscriptaccess" value="always" />
+				<param name="movie" value="{{ object.src }}" />
+				<embed src="{{ object.src }}" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="{{ object.width }}" height="{{ object.height }}">
+				</embed>
+			</object>
+		{% else %}
+			<iframe 
+			    src="{{ object.src }}" 
+			    width="{{ object.width }}" 
+			    height="{{ object.height }}" 
+			    frameborder="0">
+			</iframe>
+		{% endif %}
+		</a>
+	</div>
+	<div style="float: left;">
+		{{ object.additional_text|vs_textilerestricted }}
+	</div>
 </div>

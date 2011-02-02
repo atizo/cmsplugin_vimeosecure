@@ -23,7 +23,8 @@ class VimeoSecure(CMSPlugin):
     loop = models.BooleanField(_('Loop this video.'), default=settings.VIMEOSECURE_LOOP)    
     secure = models.BooleanField(default=settings.VIMEOSECURE_SECURE,
         help_text=_('Show video over HTTPS.'))
-
+    additional_text = models.TextField(blank=True, null=True, help_text=_(u'Text to display on the right side of th video'))
+    
     def __unicode__(self):
         return u'<a href="http://vimeo.com/%(video_id)d">http://vimeo.com/%(video_id)d</a>' % {'video_id': self.video_id}
     __unicode__.allow_tags = True
